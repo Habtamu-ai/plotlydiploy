@@ -1,3 +1,4 @@
+//Belly_Button Plotly Project
 function init() {
   // Grab a reference to the dropdown select element
   var selector = d3.select("#selDataset");
@@ -99,13 +100,11 @@ function buildCharts(sample) {
         b: 30
     }
       
-
-
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
 
-    ///////////Bubble////////
+       ///Bubble///
 
     // 1. Create the trace for the bubble chart.
     var bubbleData = [{
@@ -177,7 +176,6 @@ function buildCharts(sample) {
     height:400,
     font: { color: "black", family: "Arial" },
   };
-
   // 6. Use Plotly to plot the gauge data and layout.
   Plotly.newPlot("gauge", gaugeData, gaugeLayout);
   });
